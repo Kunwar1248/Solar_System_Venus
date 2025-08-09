@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planet Venus</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      padding: 30px;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #0a0a23, #1f1f3b);
+      color: white;
+      line-height: 1.7;
+    }
+    h1 {
+      font-size: 3em;
+      text-align: center;
+      background-image: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 1.8em;
+      margin-top: 60px;
+      background-image: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: underline;
+    }
+    h3 {
+      font-size: 1.4em;
+      text-align: center;
+      margin-top: 40px;
+      color: #aad7ff;
+    }
+    p {
+      max-width: 800px;
+      margin: 0 auto 25px auto;
+      text-align: justify;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: linear-gradient(to right, #1e3a8a, #2563eb, #9333ea);
+      color: white;
+      padding: 12px 20px;
+      z-index: 1000;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      justify-content: center;
+      font-size: 14px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    [id]::before {
+      content: "";
+      display: block;
+      height: 140px;
+      margin-top: -140px;
+      visibility: hidden;
+    }
+    table {
+      width: 90%;
+      max-width: 800px;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #1a1a2e;
+      color: #ffffff;
+      border: 1px solid #555;
+    }
+    table th, table td {
+      border: 1px solid #555;
+      padding: 10px;
+      text-align: left;
+    }
+    table th {
+      background-color: #2a2a4f;
+    }
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+  </style>
+</head>
+<body>
+
+  <h1>♀ Planet Venus</h1>
+
+  <nav>
+    <a href="#introduction">📖 Introduction</a>
+    <a href="#venusian-characteristics">🌐 Venusian Characteristics</a>
+    <a href="#physical-characteristics">🧱 Physical Characteristics</a>
+    <a href="#formation">🌌 Formation</a>
+    <a href="#geography">🌍 Geography</a>
+    <a href="#volcanism">🌋 Volcanism</a>
+    <a href="#craters">💥 Craters</a>
+    <a href="#internal-structure">🏗 Internal Structure</a>
+    <a href="#atmosphere-climate">🌫 Atmosphere & Climate</a>
+    <a href="#orbit-rotation">🪐 Orbit & Rotation</a>
+    <a href="#orbit-earth">🌍 Orbit in Respect to Earth</a>
+    <a href="#observability">Observability</a>
+    <a href="#phases">Phases</a>
+    <a href="#daylight">Daylight Apparitions</a>
+    <a href="#transits">Transits</a>
+    <a href="#ashen">Ashen Light</a>
+    <a href="#observations">Observation And Exploration Of Venus</a>
+    <a href="#missions">🛰 Missions</a>
+    <a href="#venus-gallery">🖼 Gallery</a>
+  </nav>
+
+  <section id="introduction">
+    <h2>📖 Introduction</h2>
+<img src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/general/images/2024/03/venus-mariner-10-pia23791-fig2.jpg?w=1096&h=1096&fit=clip&crop=faces%2Cfocalpoint" alt="Coronae structures on Venus" style="display:block; margin: 20px auto; width: 90%; max-width: 800px; border-radius: 10px;">
+ <p style="text-align:center; font-size: 0.9em; color: #ccc;">🌍 Satellite Image Of Venus</p>
+
+<img src="https://media.istockphoto.com/id/524200177/photo/venus.jpg?s=612x612&w=0&k=20&c=OKRm7ZuUvJ9NvSM1ldJEtYV4UqDNicSDjS5Fd95HJ2k=" alt="Coronae structures on Venus" style="display:block; margin: 20px auto; width: 90%; max-width: 800px; border-radius: 10px;">
+ <p style="text-align:center; font-size: 0.9em; color: #ccc;">🌍Radar Image Of Venus</p>
+    <p>
+      Venus is the second planet from the Sun and is often called Earth’s “sister planet” due to its similar size, mass, and proximity. Despite these similarities, Venus has developed into one of the most inhospitable worlds in the Solar System. With a dense atmosphere composed mainly of carbon dioxide, and surface temperatures soaring above 460°C (860°F), Venus experiences a runaway greenhouse effect that makes it hotter than even Mercury. The planet is shrouded in thick clouds of sulfuric acid that reflect most sunlight, making it the brightest natural object in the night sky after the Moon.
+    </p>
+    <p>
+      Venus rotates on its axis very slowly and in the opposite direction to most planets — a phenomenon known as retrograde rotation. A single day on Venus (a sidereal day) lasts approximately 243 Earth days, making it longer than a Venusian year, which is only 225 Earth days. This peculiar rotation affects the planet’s atmospheric dynamics and magnetic field, contributing to super-rotating winds that whip around the planet at speeds exceeding 360 km/h (224 mph). These winds drive global weather patterns and transport heat across the entire planet, despite the absence of oceans or significant axial tilt.
+    </p>
+    <p>
+      The surface of Venus, hidden beneath its toxic clouds, has been revealed through radar imaging by missions such as NASA’s Magellan. It features vast volcanic plains, towering mountains, and numerous impact craters. The planet’s geology is dominated by volcanic activity, and much of the surface appears to be relatively young, geologically speaking—possibly resurfaced in a massive volcanic event hundreds of millions of years ago. Unlike Earth, Venus lacks plate tectonics, which may explain the unique distribution of its surface features and the scarcity of erosion.
+    </p>
+    <p>
+      Venus has been the subject of intense scientific study for centuries, beginning with ancient astronomers who tracked its movements as both the “morning star” and “evening star.” In the modern era, it became the first planet to be explored by a spacecraft when the Soviet Venera 1 mission launched in 1961. Since then, multiple missions have attempted to penetrate its atmosphere and study its geology and climate. Despite its challenges, Venus continues to fascinate scientists, offering vital clues about planetary evolution, atmospheric dynamics, and the potential for habitability in extreme conditions.
+    </p>
+  </section>
+
+  <section id="venusian-characteristics">
+    <h2>🌐 Venusian Characteristics</h2>
+
+    <h3>🌫 Atmosphere</h3>
+    <table>
+      <tr><th>Surface Pressure</th><td>93 bar (9.3 MPa), 92 atm</td></tr>
+      <tr><th>Composition</th><td>96.5% CO₂, 3.5% N₂, trace gases</td></tr>
+      <tr><th>Sulphur Dioxide</th><td>0.015%</td></tr>
+      <tr><th>Argon</th><td>0.0070%</td></tr>
+      <tr><th>Water Vapour</th><td>0.0020%</td></tr>
+      <tr><th>Carbon Monoxide</th><td>0.0017%</td></tr>
+      <tr><th>Helium</th><td>0.0012%</td></tr>
+      <tr><th>Neon</th><td>0.0007%</td></tr>
+      <tr><th>Clouds</th><td>Composed mainly of sulfuric acid</td></tr>
+    </table>
+
+    <h3>🧱 Physical Characteristics</h3>
+    <table>
+      <tr><th>Mean Radius</th><td>6,051.8 ± 1.0 km</td></tr>
+      <tr><th>Surface Area</th><td>4.6023×10⁸ km²</td></tr>
+      <tr><th>Volume</th><td>9.2843×10¹¹ km³</td></tr>
+      <tr><th>Mass</th><td>4.8675×10²⁴ kg</td></tr>
+      <tr><th>Density</th><td>5.243 g/cm³</td></tr>
+      <tr><th>Surface Gravity</th><td>8.87 m/s²</td></tr>
+      <tr><th>Escape Velocity</th><td>10.36 km/s</td></tr>
+      <tr><th>Rotation Period (Sidereal)</th><td>−243.0226 d (retrograde)</td></tr>
+      <tr><th>Rotation Period (Synodic)</th><td>−116.75 d (retrograde)</td></tr>
+      <tr><th>Equatorial Rotation Velocity</th><td>1.81 m/s</td></tr>
+      <tr><th>Axial Tilt</th><td>2.64° (retrograde), 177.36° to orbit</td></tr>
+      <tr><th>North Pole RA</th><td>18h 11m 2s (272.76°)</td></tr>
+      <tr><th>North Pole Declination</th><td>67.16°</td></tr>
+      <tr><th>Albedo (Geometric)</th><td>0.689</td></tr>
+      <tr><th>Albedo (Bond)</th><td>0.76</td></tr>
+      <tr><th>Blackbody Temperature</th><td>232 K (−41 °C)</td></tr>
+      <tr><th>Surface Temp. Mean</th><td>737 K (464 °C)</td></tr>
+      <tr><th>Apparent Magnitude</th><td>−4.92 to −2.98</td></tr>
+      <tr><th>Absolute Magnitude (H)</th><td>−4.4</td></tr>
+      <tr><th>Angular Diameter</th><td>9.7″–66.0″</td></tr>
+      <tr><th>Surface Radiation</th><td>0.092–22 μSv/h at cloud level</td></tr>
+    </table>
+
+    <h3>🌀 Orbital Characteristics</h3>
+    <table>
+      <tr><th>Aphelion</th><td>0.728213 AU (108.94 million km)</td></tr>
+      <tr><th>Perihelion</th><td>0.718440 AU (107.48 million km)</td></tr>
+      <tr><th>Semi-major Axis</th><td>0.723332 AU (108.21 million km)</td></tr>
+      <tr><th>Eccentricity</th><td>0.006772</td></tr>
+      <tr><th>Orbital Period (Sidereal)</th><td>224.701 d</td></tr>
+      <tr><th>Orbital Period (Synodic)</th><td>583.92 d</td></tr>
+      <tr><th>Average Orbital Speed</th><td>35.02 km/s</td></tr>
+      <tr><th>Mean Anomaly</th><td>50.115°</td></tr>
+      <tr><th>Inclination</th><td>3.39458° to ecliptic</td></tr>
+      <tr><th>Longitude of Ascending Node</th><td>76.680°</td></tr>
+      <tr><th>Argument of Perihelion</th><td>54.884°</td></tr>
+      <tr><th>Satellites</th><td>None</td></tr>
+    </table>
+  </section>
+<section id="physical-characteristics">
+  <h2>🧱 Physical Characteristics</h2>
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs11214-023-00956-0/MediaObjects/11214_2023_956_Fig3_HTML.png" alt="Coronae structures on Venus" style="display:block; margin: 20px auto; width: 90%; max-width: 800px; border-radius: 10px;">
+ <p style="text-align:center; font-size: 0.9em; color: #ccc;">🌍 Physical Characterstics Of Venus</p>
+  <p>
+    Venus is strikingly similar to Earth in terms of size, mass, and overall composition, often earning it the nickname “Earth’s twin.” With a mean radius of 6,051.8 km and a mass of 4.87 × 10²⁴ kg, Venus is about 95% the size and 81.5% the mass of Earth. It has a surface gravity of 8.87 m/s², nearly 90% that of Earth’s, and a mean density of 5.24 g/cm³, indicating a composition dominated by silicate rock and a metallic iron core. Unlike most other planets, Venus has no natural satellites. Its atmosphere reflects much of the sunlight that hits it, giving it a high geometric albedo of 0.689, which makes it the brightest planet as seen from Earth. Venus's rotational characteristics are unique—it rotates very slowly and in a retrograde direction, meaning it spins opposite to most planets in the Solar System. A Venusian day (sidereal rotation) lasts about 243 Earth days, which is longer than its year (224.7 Earth days). This slow and reverse spin contributes to unusual solar day lengths and complex atmospheric circulation. The planet also lacks a global magnetic field and plate tectonics, which further distinguishes its geological behavior from Earth’s. Despite these differences, the planet's internal structure is thought to resemble Earth’s, with a crust, mantle, and core, though direct measurements are limited.
+
+  </p>
+</section>
+<section id="formation">
+  <h2>🌌 Formation</h2>
+<img src="https://cdn.mos.cms.futurecdn.net/uHL4m8WeFxmFm26hT3mH8f.jpg" alt="Coronae structures on Venus" style="display:block; margin: 20px auto; width: 90%; max-width: 800px; border-radius: 10px;">
+ <p style="text-align:center; font-size: 0.9em; color: #ccc;">🌋 Formation Of Venus</p>
+  <p>
+    Venus is believed to have formed around 4.6 billion years ago from the solar nebula—a vast cloud of gas and dust left over after the Sun’s formation. Like the other terrestrial planets, Venus emerged through the process of accretion, where dust particles and planetesimals collided and merged under gravity to form a growing planetary body. Over millions of years, these collisions generated enough heat to cause partial melting, allowing heavier elements like iron to sink inward and form a dense core, while lighter silicates formed the mantle and crust. Although Venus likely started with conditions similar to Earth, it underwent a dramatically different evolutionary path, possibly due to its proximity to the Sun and the absence of a magnetic field or active plate tectonics. These factors may have prevented Venus from stabilizing a temperate climate, instead leading to the thick CO₂-rich atmosphere and extreme greenhouse effect observed today. The early history of Venus remains a topic of active research, with missions and simulations aiming to better understand how two "twin" planets developed such divergent environments.
+  </p>
+</section>
+<section id="geography">
+  <h2>🌍 Geography of Venus</h2>
+
+  <p>
+    The surface of Venus, hidden beneath dense clouds, has been extensively mapped using radar imaging, especially from missions like NASA’s Magellan. These surveys reveal a planet dominated by volcanic plains, highland plateaus, vast lava flows, and unique geological formations unlike anything found on Earth. About 80% of Venus’s surface is covered by smooth volcanic plains, while the rest consists of highland regions and large geological structures. The surface appears geologically young, estimated to be around 300 to 500 million years old, suggesting that Venus may have undergone a planet-wide resurfacing event.
+  </p>
+  <img src="https://astrogeology.usgs.gov/ckan/dataset/f992cb3c-4f37-4e1a-a59d-4f29d8307d7d/resource/d97f7bf8-73da-46fe-9edb-95c9ad233b10/download/venus_magellan_c3-mdir_clrtopo_global_mosaic_1024.jpg" alt="Topographic map of Venus" style="display:block; margin: 20px auto; width: 90%; max-width: 800px; border-radius: 10px;">
+  <p style="text-align:center; font-size: 0.9em; color: #ccc;">🗺️ Topographic map of Venus from NASA's Magellan mission</p>
+
+  <p>
+    Venus's topography features two major highland regions: <strong>Ishtar Terra</strong> in the northern hemisphere and <strong>Aphrodite Terra</strong> along the equator. Ishtar Terra is home to Maxwell Montes, the tallest mountain on Venus, rising approximately 11 kilometers above the mean planetary radius. Aphrodite Terra, meanwhile, spans a continent-sized region with vast ridges and troughs. These areas are analogous to Earth's continents but are formed by processes unrelated to plate tectonics, which is absent on Venus. Instead, the surface is shaped by mantle upwelling and surface deformation.
+  </p>
+
+  <p>
+    The plains of Venus are dominated by volcanic features, including broad shield volcanoes, pancake domes, and coronae—large, circular structures thought to result from plumes of magma rising from the mantle. Some volcanoes are massive, such as <strong>Maat Mons</strong>, which is believed to be the highest volcano on Venus. Unlike Earth, Venus lacks long chains of volcanoes and mid-ocean ridges, indicating that it does not have active plate boundaries. Instead, volcanism appears to be distributed and extensive, possibly driven by heat buildup under the rigid lithosphere.
+  </p>
+  <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/09/v/VenusMaatMons1200w.jpg" alt="Maat Mons Volcano on Venus" style="display:block; margin: 20px auto; width: 90%; max-width: 800px; border-radius: 10px;">
+  <p style="text-align:center; font-size: 0.9em; color: #ccc;">🌋 Radar image of Maat Mons – Venus's highest volcano</p>
+
+  <p>
+    One of the most intriguing features of Venusian geography is the presence of <strong>coronae</strong>—circular to oval-shaped formations ranging from tens to hundreds of kilometers in diameter. These structures are believed to form through mantle upwelling, where hot material pushes up on the crust, causing it to dome and fracture. As the plume cools and subsides, the crust collapses inward, creating concentric rings. Coronae are unique to Venus and may be evidence of the planet’s internal heat trying to escape through a stagnant lid rather than mobile tectonic plates.
+  </p>
+  <img src="https://cdn.mos.cms.futurecdn.net/ePrQrjuGnBmSVYRbBWgXAK.jpg" alt="Coronae structures on Venus" style="display:block; margin: 20px auto; width: 90%; max-width: 800px; border-radius: 10px;">
+  <p style="text-align:center; font-size: 0.9em; color: #ccc;">🌀 Multiple coronae observed on Venus, captured via radar</p>
+
+  <p>
+    Impact craters on Venus are relatively sparse and randomly distributed, supporting the theory that much of the surface was globally resurfaced in a geologically brief time period. The thick atmosphere prevents small meteoroids from reaching the ground, allowing only larger objects to create craters. Unlike on Earth or the Moon, Venusian craters often have unusual features such as radar-dark haloes or surrounding "parachute" ejecta patterns, likely caused by atmospheric interactions during impact. The preservation of these features suggests minimal erosion on the surface.
+  </p>
+
+  <p>
+    Despite its many volcanic and tectonic features, Venus shows little sign of current geological activity on the surface—although this is still debated. However, recent data from orbiters have suggested possible transient hotspots and atmospheric composition changes that may point to recent or ongoing volcanic activity. The lack of erosion, water, and tectonics means that Venus's surface features remain remarkably intact over long periods. Understanding the geography of Venus offers a window into how terrestrial planets evolve in extreme environments, and may help scientists predict the geological fate of Earth-like worlds in other solar systems.
+  </p>
+</section>
+<section id="volcanism">
+  <h2>🌋 Volcanism on Venus</h2>
+
+  <p>
+    Volcanism is one of the most defining features of Venus’s surface. Unlike Earth, where volcanic activity is largely concentrated at plate boundaries, Venus displays widespread volcanic formations across nearly its entire surface. Radar mapping by missions such as NASA’s Magellan has revealed that about 80% of the planet is covered by volcanic plains, indicating extensive lava flow events. These plains are relatively smooth, suggesting large-scale effusive volcanism rather than explosive eruptions. The lack of erosion means most volcanic structures remain remarkably preserved, offering a snapshot of the planet’s geological past.
+  </p>
+  <img src="https://th-thumbnailer.cdn-si-edu.com/ItRko20GEg94o3hB_qwg16wZd3w=/fit-in/1600x0/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/af/09/af09dd2b-9a1f-4ffe-8250-f5601893a3ef/pia00233-_venus_-_3d_perspective_view_of_eistla_regio_edit.jpg" alt="Venus Volcanic Plains" style="display:block; margin: 20px auto; width: 90%; max-width: 800px; border-radius: 10px;">
+  <p style="text-align:center; font-size: 0.9em; color: #ccc;">🗻 Volcanic plains on Venus as seen by Magellan radar imaging</p>
+
+  <p>
+    Venus hosts a wide variety of volcanic structures, including broad shield volcanoes, lava domes, and unique features like pancake domes. One of the most prominent volcanoes on Venus is <strong>Maat Mons</strong>, rising approximately 8 kilometers above the surrounding plains. It is believed to be the highest volcano on the planet and a candidate for recent or ongoing activity. Unlike the steep stratovolcanoes of Earth, Venusian volcanoes tend to have gentle slopes, suggesting the lava is very fluid, spreading far and wide before cooling. Some features even resemble large igneous provinces seen on Earth.
+  </p>
+
+  <p>
+    One of the most unique volcanic structures on Venus are <strong>pancake domes</strong>—broad, circular formations with flat tops and steep edges. These features are thought to form from the eruption of thick, viscous lava, likely rich in silica. Their size ranges from 10 to over 100 kilometers in diameter, and they often appear in clusters. Venus also exhibits extensive lava channels and sinuous rilles that can stretch for hundreds of kilometers, similar to those on the Moon and Mars. These suggest long-lived lava flows capable of carving through the surface.
+  </p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhDrQpll6u98tHZk7_9ukvbtooZ_3dw_dhoA&s" alt="Pancake Domes on Venus" style="display:block; margin: 20px auto; width: 90%; max-width: 800px; border-radius: 10px;">
+  <p style="text-align:center; font-size: 0.9em; color: #ccc;">🥞 Pancake domes—unusual lava formations found only on Venus</p>
+
+  <p>
+    The question of whether Venus is still volcanically active remains a subject of scientific interest. Recent data from the ESA’s Venus Express mission detected variations in atmospheric sulfur dioxide levels and thermal anomalies on the surface, hinting at possible recent eruptions. In 2023, NASA reanalyzed Magellan data and found evidence of changes in vent shapes near Maat Mons, possibly indicating lava flows. If confirmed, Venus would be only the second terrestrial planet—after Earth—with known active volcanism. This reinforces the idea that Venus is not a dead world, but one still shaped by dynamic internal processes.
+  </p>
+</section>
+<section id="craters">
+  <h2>💥 Impact Craters on Venus</h2>
+
+  <p>
+    Venus has around 1,000 known impact craters, which are scattered fairly evenly across its surface. This distribution indicates that the entire surface is roughly the same age—estimated to be 300 to 600 million years old. Due to its thick atmosphere, which is over 90 times denser than Earth’s, small meteoroids disintegrate before reaching the surface. Only larger bodies, over 1.5–2 km in diameter, can survive atmospheric entry and create impact craters. This results in a crater population that is significantly different from the Moon, Mercury, or Mars, where smaller craters are more common.
+  </p>
+
+  <p>
+    Venusian craters exhibit unique morphologies due to atmospheric and geological influences. Many display radar-dark haloes or parabolic ejecta patterns caused by interaction with the dense atmosphere during impact. Some craters show signs of post-impact volcanic flooding or tectonic activity, suggesting that volcanic processes may have resurfaced parts of the planet after impacts. The lack of erosion and active tectonics allows these craters to remain well-preserved for long periods. Interestingly, double and complex crater formations are also found, including those with central peaks or concentric rings.
+  </p>
+
+  <img src="https://dq0hsqwjhea1.cloudfront.net/tessera.jpg" alt="Radar image of Venusian crater" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+  <p style="text-align:center; font-size: 0.9em; color: #ccc;">🛰 Radar image of a preserved impact crater on Venus (NASA Magellan)</p>
+
+  <img src="https://encyclopedia.pub/media/common/202211/mceclip1-6360ded4e2954.png" alt="Triple crater formation on Venus" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+  <p style="text-align:center; font-size: 0.9em; color: #ccc;">🔵 Danilova, Crixa, and Belmondo—three nearby impact craters on Venus</p>
+</section>
+<section id="internal-structure">
+  <h2>🏗 Internal Structure of Venus</h2>
+
+  <p>
+    Venus is a terrestrial planet with a layered internal structure similar to Earth's. It has a crust, a silicate mantle, and a metallic core. The crust is believed to be relatively thin, estimated at 20–50 km, lying atop a mantle that extends to the core. While seismic data is limited, inferences from density, size, and moment of inertia suggest Venus’s mantle is geodynamically active, possibly driving the planet’s extensive volcanism and surface deformation. Unlike Earth, however, there is no clear evidence of tectonic plate movement.
+  </p>
+
+  <p>
+    Venus’s core is thought to be composed primarily of iron and nickel and is roughly 3,000 kilometers in radius—comparable to Earth’s. However, Venus has no intrinsic magnetic field, which raises questions about the core's state. It is unclear whether the core is entirely solid, partially molten, or unable to generate a geodynamo due to Venus’s slow rotation. The lack of a protective magnetic field has profound implications for atmospheric retention and solar wind interactions.
+  </p>
+
+  <p>
+    Recent studies using gravity and topography data suggest that mantle plumes and upwelling could be active beneath Venus’s surface, leading to coronae and large-scale volcanic features. These processes resemble “hot spot” volcanism on Earth, like that seen in Hawaii, but occurring on a planet without crustal recycling. Understanding Venus's internal structure helps scientists model the thermal and geological evolution of rocky planets and predict the tectonic and volcanic fate of exo-Earths.
+  </p>
+
+  <img src="https://www.vizagchemical.com/sites/default/files/field/image/venus-cutaway.png" alt="Internal layers of Venus" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+  <p style="text-align:center; font-size: 0.9em; color: #ccc;">🧠 Internal structure diagram of Venus – crust, mantle, and core (NASA)</p>
+
+  <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs11214-022-00937-9/MediaObjects/11214_2022_937_Fig1_HTML.png?as=webp" alt="Venus mantle model" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+  <p style="text-align:center; font-size: 0.9em; color: #ccc;">🌋 Mantle convection model for Venus’s volcanic features</p>
+
+  <img src="https://www2.mps.mpg.de/projects/planetary-plasmas/research/merkurmag.jpg" alt="Magnetic fields compared" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+  <p style="text-align:center; font-size: 0.9em; color: #ccc;">🧲 Venus lacks a strong magnetic field unlike Earth (ESA Illustration)</p>
+</section>
+<section id="atmosphere-climate">
+  <h2>🌫 Atmosphere & Climate of Venus</h2>
+
+  <p>
+    Venus has the thickest atmosphere of any terrestrial planet in the Solar System, composed of 96.5% carbon dioxide and 3.5% nitrogen, with trace amounts of other gases including sulfur dioxide and water vapor. Surface pressures are immense—over 92 times Earth's sea-level pressure—equivalent to being nearly a kilometer underwater. The dense carbon dioxide traps heat efficiently through an extreme greenhouse effect, causing surface temperatures to soar above 460 °C (860 °F), even hotter than Mercury, despite being farther from the Sun.
+  </p>
+
+  <p>
+    The Venusian atmosphere contains thick clouds of sulfuric acid that extend from 45 to 70 kilometers in altitude. These clouds reflect about 75% of incoming sunlight, making Venus exceptionally bright in Earth’s night sky. Below this cloud layer lies a hazy lower atmosphere that’s nearly opaque to visible light. This makes ground-based observations of the surface impossible, and most surface data comes from radar and infrared sensors on orbiting spacecraft like Magellan and Akatsuki.
+  </p>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Venus_-_December_23_2016.png/250px-Venus_-_December_23_2016.png" alt="Venus in ultraviolet from Akatsuki" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+  <p style="text-align:center; font-size: 0.9em; color: #ccc;">☁️ Ultraviolet image of Venus's atmosphere captured by JAXA's Akatsuki</p>
+
+  <p>
+    The climate of Venus is incredibly stable but hostile. It exhibits minimal temperature variation between the equator and poles or day and night. This is due to the thick atmosphere and super-rotating winds that circulate the planet every 4 to 5 Earth days. Winds in the upper atmosphere can reach up to 360 km/h (224 mph). However, near the surface, the winds are sluggish, barely moving due to high atmospheric density. Despite the lack of seasonal variation, the surface remains consistently hot, dark, and crushingly pressurized.
+  </p>
+
+  <p>
+    The clouds of Venus are also responsible for a peculiar phenomenon: lightning. Soviet and American missions detected bursts of radio waves suggestive of electrical storms in the upper atmosphere. Additionally, the cloud tops show bright and dark bands in ultraviolet imagery, indicating unknown UV absorbers that may hint at complex photochemical processes or even microbial life—though that remains purely speculative. Venus also exhibits high-altitude polar vortices, spinning storms with a double-eye structure that resemble giant atmospheric cyclones.
+  </p>
+  <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2006/06/double_vortex_at_venus_south_pole/9754905-3-eng-GB/Double_vortex_at_Venus_South_pole_pillars.gif" alt="Venus in ultraviolet from Akatsuki" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+  
+  <p style="text-align:center; font-size: 0.9em; color: #ccc;">🌀 False-color image of Venus’s double-eyed polar vortex (ESA Venus Express)</p>
+
+  <img src="https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/a/a_NightonVenus-1.jpg" alt="Lightning on Venus" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+  <p style="text-align:center; font-size: 0.9em; color: #ccc;">⚡ Lightning captured in infrared from Akatsuki (JAXA)</p>
+
+  <img src="https://www.thepipettepen.com/wp-content/uploads/2023/02/EarthVenusAtmos-Pearson2011.jpg" alt="Cloud layers of Venus" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+  <p style="text-align:center; font-size: 0.9em; color: #ccc;">☁️ Venus cloud layer diagram – stratified and acidic (NASA/JPL)</p>
+</section>
+<!-- Orbit & Rotation Section -->
+<section id="orbit-rotation">
+  <h2>🪐 <u>Orbit & Rotation</u></h2>
+  <p>
+    Venus orbits the Sun at an average distance of about <strong>108.21 million kilometers</strong> (0.723 AU), completing one revolution every 224.7 Earth days. It follows an almost circular path with an eccentricity of just 0.0067, making its orbit more circular than that of most other planets in the Solar System. Uniquely, Venus rotates in a retrograde direction, meaning it spins in the opposite direction of most planets, including Earth. This rotation is extremely slow — one day on Venus lasts about 243 Earth days, which is even longer than its year.
+  </p>
+  <p>
+    The retrograde rotation of Venus results in the Sun rising in the west and setting in the east from the planet's surface. Scientists believe this unusual rotation could be the result of a massive collision early in Venus’s history or due to tidal interactions with the Sun over billions of years. Combined with its thick atmosphere, this slow rotation contributes to the extreme and uniform surface temperatures of the planet.
+  </p>
+ <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Venusorbitsolarsystem.gif" alt="Venus in ultraviolet from Akatsuki" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+ <img src="https://www.eso.org/public/outreach/eduoff/vt-2004/Background/Infol2/vt2004-if11-fig4.jpg" alt="Venus in ultraviolet from Akatsuki" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+</section>
+
+<!-- Orbit in Respect to Earth Section -->
+<section id="orbit-earth">
+  <h2>🌍 <u>Orbit in Respect to Earth</u></h2>
+  <p>
+    Venus is Earth's closest planetary neighbor, and because of its proximity and orbital path, it is often visible as the "Morning Star" or "Evening Star." The planet comes closest to Earth during inferior conjunction, when it lies between the Earth and the Sun, at a distance of about 38 million kilometers. However, Venus never appears more than 47° away from the Sun in the sky, due to its position inside Earth’s orbit.
+  </p>
+  <p>
+    The synodic period of Venus — the time it takes to return to the same position relative to the Sun as seen from Earth — is 583.92 Earth days. This cycle affects its visibility and brightness, making it one of the brightest natural objects in the night sky after the Moon. Venus’s orbital resonance with Earth (close to an 8:13 ratio) means that the planet returns to almost the same point in the sky every 8 Earth years.
+  </p>
+<img src="https://imageio.forbes.com/specials-images/imageserve/5f2c23151d02fb44645a0f43/0x0.jpg?format=jpg&crop=4772,2686,x89,y197,safe&height=900&width=1600&fit=bounds" alt="Venus in ultraviolet from Akatsuki" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Venus_pentagram.png/640px-Venus_pentagram.png" alt="Venus in ultraviolet from Akatsuki" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+
+
+</section>
+<section id="observability">
+  <h2>Observability</h2>
+  <p>Venus is one of the brightest objects in the night sky, often referred to as the “Evening Star” or “Morning Star” depending on its position relative to the Sun. Its high reflectivity, caused by its dense cloud cover, makes it visible even in twilight conditions. Observers can see Venus without any optical aid, and it is often the first "star-like" object to appear after sunset or before sunrise.</p>
+  <p>The planet’s visibility is affected by its elongation — the angular distance from the Sun as seen from Earth. Maximum elongations provide the best viewing conditions, when Venus shines brilliantly in the west after sunset or in the east before sunrise. Astronomers track these cycles to determine the best times for observation.</p>
+  <img src="https://photojournal.jpl.nasa.gov/figures/PIA23791_fig1.jpg" alt="Venus in ultraviolet from Akatsuki" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+</section>
+
+<section id="phases">
+  <h2>Phases</h2>
+  <p>Like the Moon, Venus exhibits distinct phases as it orbits the Sun. When it is on the far side of the Sun, it appears nearly full but small in angular size. As it approaches Earth, its phase wanes to a crescent while its apparent diameter increases dramatically.</p>
+  <p>The phases of Venus were famously observed by Galileo Galilei in 1610, providing strong evidence for the heliocentric model of the Solar System. Observing these phases today is a favorite project for amateur astronomers with small telescopes.</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Phases_Venus.jpg" alt="Venus in ultraviolet from Akatsuki" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+</section>
+
+<section id="daylight">
+  <h2>Daylight Apparitions</h2>
+  <p>Although most often seen in twilight, Venus is bright enough to be spotted in full daylight under clear skies. Experienced observers use the Moon or other landmarks to help locate it during the day. This phenomenon surprises many first-time viewers, as the planet can be visible even when the Sun is high.</p>
+  <p>Daylight apparitions of Venus are best observed when the planet is near its greatest elongation from the Sun, ensuring it remains far enough away from the Sun’s glare to be safely observed.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Lunar_Occultation_of_Venus_%28NHQ201512070001%29.jpg/1024px-Lunar_Occultation_of_Venus_%28NHQ201512070001%29.jpg" alt="Venus in ultraviolet from Akatsuki" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+</section>
+
+<section id="transits">
+  <h2>Transits</h2>
+  <p>Transits of Venus occur when the planet passes directly between Earth and the Sun, appearing as a small black dot moving across the solar disk. These events are extremely rare, occurring in pairs separated by more than a century.</p>
+  <p>The last transit occurred in 2012, and the next will not take place until 2117. Historically, transits were used to calculate the astronomical unit — the average distance between Earth and the Sun.</p>
+ <img src="https://imageio.forbes.com/specials-images/imageserve/62977622bbcd08eda96222a0/The-transit-of-Venus-on-June-5--2012-from-Mauna-Kea-volcano--Hawaii-captured-by/960x0.jpg?format=jpg&width=960" alt="Venus in ultraviolet from Akatsuki" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+</section>
+
+<section id="ashen">
+  <h2>Ashen Light</h2>
+  <p>The “ashen light” is a mysterious faint glow reported on the night side of Venus. Observations of this phenomenon are sporadic and controversial, with some astronomers suggesting it may be caused by lightning, auroras, or atmospheric phenomena.</p>
+  <p>Despite centuries of reports, the ashen light has yet to be definitively explained. Modern spacecraft observations have provided limited evidence, keeping it as one of Venus's enduring mysteries.</p>
+  <img src="https://c02.purpledshub.com/uploads/sites/48/2020/01/Venus_ashen_light-35c9a71.jpg?w=1029&webp=1" alt="Venus in ultraviolet from Akatsuki" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+</section>
+<section id="observations">
+<h2>🔭 Observation and Exploration of Venus</h2>
+
+<h3>Ancient Observations</h3>
+<p>
+In ancient times, Venus was one of the most prominent objects in the night sky, often visible shortly after sunset or before sunrise. Its brightness led early civilizations to believe it was two separate objects: the "Morning Star" and the "Evening Star." The ancient Sumerians referred to Venus as "Inanna," associating it with their goddess of love and war. Ancient Babylonians also tracked its movements carefully, using them for calendar purposes and astrological predictions.
+</p>
+<p>
+The ancient Greeks called Venus "Phosphorus" when it appeared in the morning and "Hesperus" in the evening. It was only later understood to be a single celestial body. The Mayans were especially skilled in predicting Venus’s appearances, recording its cycles in the Dresden Codex and integrating its motion into their religious ceremonies and agricultural planning.
+</p>
+<p>
+In India, Venus was known as "Shukra" and held astrological importance, considered a beneficent planet influencing love, prosperity, and harmony. Early Indian astronomers documented its motion and brightness, linking it with mythological deities and calculating its synodic period with impressive accuracy.
+</p>
+<p>
+These ancient observations were all naked-eye and depended on careful sky-watching over many years. The consistent brightness and predictable path of Venus made it a key object for early astronomy, mythology, and navigation.
+</p>
+<img src="https://blogs.loc.gov/maps/files/2024/01/Venus-image-14-Is-Venus-Inhabited.jpg" alt="Ancient Venus observations" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+<img src="https://encyclopedia.pub/media/common/202211/mceclip0-6371e2afe6e67.png" alt="Depiction of Venus in ancient art" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+
+<h3>Medieval Observations</h3>
+<p>
+During the medieval period, Venus continued to be a significant object for both Islamic and European astronomers. Islamic scholars, such as Al-Battani and Ibn al-Shatir, made precise measurements of Venus’s position, contributing to improved planetary models. They also preserved and enhanced ancient Greek astronomical knowledge, passing it on to Renaissance Europe.
+</p>
+<p>
+Medieval European astronomy was heavily influenced by Ptolemaic geocentric models, where Venus was believed to orbit the Earth between the Moon and the Sun. This explained its phases and proximity to the Sun in the sky but still relied on an Earth-centered universe.
+</p>
+<p>
+In Asia, Chinese astronomers made detailed records of Venus’s appearances, sometimes noting unusual brightness or coloration that may have been due to atmospheric phenomena. Japanese and Korean scholars also maintained records, integrating them into astrological traditions.
+</p>
+<p>
+Despite the lack of telescopic instruments, medieval astronomers maintained accurate observational logs. These records later became vital for early modern astronomers seeking to reconcile classical astronomy with new observations.
+</p>
+<img src="https://images.saymedia-content.com/.image/t_share/MTc1Nzg1MTc0NDUyMjE2ODg3/galileo-galilei-discovers-the-moons-of-jupiter-and-the-phase-of-venus.jpg" alt="Medieval astronomical records" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+<img src="https://www.medievalists.net/wp-content/uploads/2014/07/planets-e1406490275693.jpg" alt="Venus in medieval manuscripts" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+
+<h3>Modern Observations</h3>
+<p>
+The invention of the telescope in the early 17th century revolutionized Venus observations. Galileo Galilei was the first to observe the phases of Venus in 1610, proving that it orbited the Sun and not the Earth. This was a major blow to the geocentric model and a strong confirmation of the heliocentric theory proposed by Copernicus.
+</p>
+<p>
+In the 18th and 19th centuries, Venus transits became crucial for calculating the astronomical unit — the distance between the Earth and the Sun. International expeditions were launched to observe these rare events, such as the transits of 1761 and 1769, involving explorers like Captain James Cook.
+</p>
+<p>
+By the 20th century, advanced telescopes and spectroscopy allowed scientists to study Venus’s thick atmosphere, discovering it was mostly carbon dioxide with clouds of sulfuric acid. Radar mapping from Earth revealed its surface features despite the thick cloud cover, leading to detailed topographic maps.
+</p>
+<p>
+Modern space probes and orbiters have since provided unprecedented detail about Venus’s geology, weather, and history. Observations from spacecraft like Magellan, Akatsuki, and Venus Express have deepened our understanding of the planet’s dynamics.
+</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGbRobyYPS83Aix_fIET92YDrrRjr8hKG0qQ&s" alt="Telescope view of Venus" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+<img src="https://media.ahmedabadmirror.com/am/uploads/mediaGallery/image/1686170789272.jpg-org" alt="Modern spacecraft observations" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+</section>
+<section id="missions">
+<h2>🚀 Missions to Venus</h2>
+
+<p>
+The first successful mission to Venus was the Soviet Venera 7 in 1970, which became the first spacecraft to land on another planet and transmit data back to Earth. Since then, multiple missions from different countries have studied Venus’s atmosphere, surface, and climate.
+</p>
+
+<h3>Venera 7</h3>
+<img src="https://davidgrunwaldblog.wordpress.com/wp-content/uploads/2017/09/venus-surface-1024.jpg?w=640" alt="Venera 7 spacecraft" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+
+<h3>Magellan</h3>
+<img src="https://d2pn8kiwq2w21t.cloudfront.net/original_images/missionswebmagellan_DhDxJZ2.jpg" alt="Magellan spacecraft" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+
+<h3>Akatsuki</h3>
+<img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/07/akatsuki_main.jpg?w=1500&h=723&fit=clip&crop=faces%2Cfocalpoint" alt="Akatsuki spacecraft" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+
+<h3>Venus Express</h3>
+<img src="https://www.cosmos.esa.int/documents/521509/522199/VenusExpressSeq14_c_H.jpg/745fea0b-4042-47ac-8e9b-9bbef406f591?t=1442834014000" alt="Venus Express spacecraft" style="display:block; margin: 20px auto; width: 90%; max-width: 700px; border-radius: 10px;">
+</section>
+<section id="venus-gallery" style="text-align:center; padding: 40px;">
+  <h2 style="text-decoration: underline;">Rotating Venus Gallery</h2>
+  
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <div style="width: 250px; height: 250px;">
+      <img src="https://i.redd.it/ygxwzhqs1yka1.jpg" 
+           alt="Venus Real Color" 
+           style="width: 100%; height: 100%; border-radius: 15px; animation: spin 20s linear infinite;">
+    </div>
+
+    <div style="width: 250px; height: 250px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Venus_globe.jpg/250px-Venus_globe.jpg" 
+           alt="Venus Globe" 
+           style="width: 100%; height: 100%; border-radius: 15px; animation: spin 20s linear infinite;">
+    </div>
+
+    <div style="width: 250px; height: 250px;">
+      <img src="https://cdn.britannica.com/09/78009-004-8B554E80/ultraviolet-light-Venus-spacecraft-Pioneer-Orbiter-bands-Feb-26-1979.jpg" 
+           alt="Venus Atmosphere" 
+           style="width: 100%; height: 100%; border-radius: 15px; animation: spin 20s linear infinite;">
+    </div>
+  </div>
+</section>
+</body>
+</html>
